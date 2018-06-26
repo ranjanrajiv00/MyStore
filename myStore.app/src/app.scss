@@ -1,0 +1,27 @@
+.centered{
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.display-inline
+{
+    display: inline !important;
+}
+
+.width-auto
+{
+    width: auto !important;
+}
+
+.display-none
+{
+    display: none !important;
+}
+.app-main-panel
+{
+    position: relative;
+    z-index: 2;
+    overflow: auto;
+    height: 100%;
+}

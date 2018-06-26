@@ -1,0 +1,34 @@
+<div class="fill poster1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 centered">
+                    <div class="sign-in">
+                        <form role="form" [formGroup]="signInForm" (ngSubmit)="onSignIn()">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>User Name</label>
+                                        <input type="text" class="form-control" placeholder="User Name" formControlName="userName">
+                                        <validation-message [control]="signInForm.controls.userName"></validation-message>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input type="password" class="form-control" placeholder="Password" formControlName="password">
+                                        <validation-message [control]="signInForm.controls.password"></validation-message>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <input type="submit" name="sign-in" class="btn btn-danger btn-block btn-round" value="Sign In" />
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

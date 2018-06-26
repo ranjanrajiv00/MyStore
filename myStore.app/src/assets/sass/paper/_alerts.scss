@@ -1,0 +1,63 @@
+$textColor:#dbcece;
+.alert{
+    border: 0;
+    border-radius: 0;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    font-size: 14px;
+
+    .container &{
+        border-radius: 4px;        
+    }
+    .navbar &{
+        border-radius: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 85px;
+        width: 100%;
+        z-index: 3;
+    }
+    .navbar:not(.navbar-transparent) &{
+        top: 70px;
+    }
+
+    span[data-notify="icon"]{
+        font-size: 30px;
+        display: block;
+        left: 15px;
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+    }
+
+    .close ~ span{
+        display: block;
+        max-width: 89%;
+    }
+
+    &[data-notify="container"]{
+        padding: 10px 10px 10px 20px;
+        border-radius: $border-radius-base;
+    }
+
+    [data-notify="icon"][class*="ti-"] ~ [data-notify="message"]{
+        padding-left: 50px;
+    }
+}
+.alert-info{
+    background-color: #6b56aa;
+    color: $textColor;
+}
+.alert-success {
+    background-color: #494848;
+    color: $textColor;
+}
+.alert-warning {
+    background-color: #d8f886;
+    color: #333333;
+}
+.alert-danger {
+    background-color: #c71c1c;
+    color: $textColor;
+}

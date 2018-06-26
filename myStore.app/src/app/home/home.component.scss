@@ -1,0 +1,27 @@
+.poster1
+{
+    background:url(/assets/img/sun-set1.jpg);
+}
+
+.poster2
+{
+    background:url(/assets/img/sun-set2.jpg);
+}
+
+.fill {
+    min-height: 600px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #333333;
+}
+
+.content
+{
+    padding: 10px;
+}
+.description
+{
+    float: right;
+}
